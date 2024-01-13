@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Cristiano Ronaldo",
+    "price": 100,
+    "age": 38,
+    "position": "Forward",
+    "image": "https://i.guim.co.uk/img/media/3f183e3024872dc0280012487854dc5807048166/0_42_3600_2160/master/3600.jpg?width=1300&dpr=1&s=none"
+  },
+  {
+    "id": 2,
+    "name": "Bruno Fernandes",
+    "price": 80,
+    "age": 29,
+    "position": "Midfielder",
+    "image": "https://i.guim.co.uk/img/media/7a67c4fcd99e75b5afbbb7c241465452ebb496c0/94_266_2743_1646/master/2743.jpg?width=620&dpr=1&s=none"
+  },
+  {
+    "id": 3,
+    "name": "Ruben Dias",
+    "price": 70,
+    "age": 26,
+    "position": "Defender",
+    "image": "https://cdn.vox-cdn.com/thumbor/OaiGDdSTnS6m1fVnGJ-H-DPiC9o=/0x0:5207x3471/920x613/filters:focal(2255x270:3087x1102):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/70587970/1377678035.0.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Diogo Jota",
+    "price": 60,
+    "age": 27,
+    "position": "Forward",
+    "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt0d3960f8fae09a8f/61a879992ea67009f6d10ded/GettyImages-1356655019.jpg?auto=webp&format=pjpg&width=1080&quality=60"
+  },
+  {
+    "id": 5,
+    "name": "João Cancelo",
+    "price": 50,
+    "age": 29,
+    "position": "Defender",
+    "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt750091fdedbd903d/652e3a6cbce0f3db8902f8d1/GettyImages-1734965087_(1).jpg?auto=webp&format=pjpg&width=1080&quality=60"
+  },
+  {
+    "id": 6,
+    "name": "Bernardo Silva",
+    "price": 75,
+    "age": 29,
+    "position": "Midfielder",
+    "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt58833ccb516f860a/658da1f87551dc040af942c9/GOAL_-_Blank_WEB_-_Facebook_(26).png?auto=webp&format=pjpg&width=1080&quality=60"
+  },
+  {
+    "id": 7,
+    "name": "Andre Silva",
+    "price": 40,
+    "age": 29,
+    "position": "Forward",
+    "image": "https://e0.365dm.com/18/08/1600x900/skysports-andre-silva-ac-milan_4387438.jpg?20180811202331"
+  },
+  {
+    "id": 8,
+    "name": "Ruben Neves",
+    "price": 55,
+    "age": 26,
+    "position": "Midfielder",
+    "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta78cece9d5513240/655d2c313a08e5040a63cfae/GOAL_-_Blank_WEB_-_Facebook_(49).png?auto=webp&format=pjpg&width=1080&quality=60"
+  },
+  {
+    "id": 9,
+    "name": "Nuno Mendes",
+    "price": 30,
+    "age": 21,
+    "position": "Defender",
+    "image": "https://images.impresa.pt/sicnot/2022-05-31-paris-saint-germain-v-estac-troyes--ligue-1-uber-eats/original/mw-720"
+  },
+  {
+    "id": 10,
+    "name": "Danilo Pereira",
+    "price": 45,
+    "age": 32,
+    "position": "Midfielder",
+    "image": "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt5db8c1b5c16aa87d/642a79811f1e716880f40308/GettyImages-1479192077.jpg?auto=webp&format=pjpg&width=1080&quality=60"
+  },
+  {
+    "id": 11,
+    "name": "Rui Patricio",
+    "price": 25,
+    "age": 35,
+    "position": "Goalkeeper",
+    "image": "https://cdn.resfu.com/media/img_news/afp_en_ac77463f224dcd3511efd452fd8ef1b937c02351.jpg?size=1000x&lossy=1"
+  }
+]
