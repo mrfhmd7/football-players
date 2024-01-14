@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Player from '../Player/Player';
 
-const Market = () => {
+const Market = ({handleAddToCart}) => {
      const [players, setPlayers] = useState([]);
 
      useEffect(() => { 
@@ -14,6 +14,7 @@ const Market = () => {
                {
                     players.map(player => <Player
                          player={player}
+                         handleAddToCart={handleAddToCart}
                          key={player.id}
                     ></Player>)
                }

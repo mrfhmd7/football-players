@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Player = ({player}) => {
-     const { image, position,age, name, price } = player;
+const Player = ({player, handleAddToCart}) => {
+     const { image, position,age, name, price,id } = player;
      // console.log(player);
-     return (
 
+     const handlePlayer = handleAddToCart;
+
+     return (
           <>
                <div className='mt-8 border-2 border-green-800 rounded-md h-96 relative'>
                     <img className='m-auto pt-3 rounded-md h-52 w-11/12' src={image} alt="" />
@@ -15,7 +17,7 @@ const Player = ({player}) => {
                          <p className='font-semibold'>Market value: ${price}m </p>
                     </div>
                     <div className='absolute bottom-0 w-full bg-lime-500 hover:bg-lime-700 rounded-sm'>
-                         <button className='text-white h-10 font-medium'>Take the player</button>
+                         <button className='text-white h-10 w-full font-medium' onClick={() => handlePlayer(player)}>Take the player</button>
                     </div>
                </div>
           </>

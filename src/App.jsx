@@ -5,15 +5,23 @@ import Market from './components/Market/Market'
 
 
 function App() {
+
+  const handleAddToCart = (player) => {
+    console.log(player);
+  }
+
   return (
     <>
       <Header></Header>
       <div className='grid grid-cols-10'>
         <div className='col-span-7'>
-          <Market></Market>
+          <Market
+            handleAddToCart={handleAddToCart}
+          ></Market>
         </div>
         <div className='col-span-3'>
-          <Cart></Cart>
+          <Cart
+          ></Cart>
         </div>
       </div>
       
