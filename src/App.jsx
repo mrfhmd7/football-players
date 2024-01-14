@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Cart from './components/Cart/Cart'
 import Header from './components/Header/Header'
@@ -7,7 +8,11 @@ import Market from './components/Market/Market'
 function App() {
 
   const handleAddToCart = (player) => {
-    console.log(player);
+
+    const [cart, setCart] = useState([]);
+
+    const playerCart = [];
+
   }
 
   return (
