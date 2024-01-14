@@ -14,8 +14,8 @@ const Player = ({player}) => {
                          <p>Age: {age} Years</p>
                          <p className='font-semibold'>Market value: ${price}m </p>
                     </div>
-                    <div className='absolute bottom-0 w-full h-10 bg-lime-500 hover:bg-lime-800 rounded-sm'>
-                         <button className='text-white font-medium py-2'>Take the player</button>
+                    <div className='absolute bottom-0 w-full bg-lime-500 hover:bg-lime-700 rounded-sm'>
+                         <button className='text-white h-10 font-medium'>Take the player</button>
                     </div>
                </div>
           </>
