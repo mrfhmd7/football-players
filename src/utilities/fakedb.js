@@ -12,9 +12,9 @@ const addToLocalStorage = id => {
 
      const quantity = playerCart[id];
      if (quantity) {
-          const newQuantity = quantity + 1;
-          playerCart[id] = newQuantity;
-          // alert('Already added to player');
+          // const newQuantity = quantity + 1;
+          // playerCart[id] = newQuantity;
+          alert('Already added to player');
      } else {
           playerCart[id] = 1;
      }
