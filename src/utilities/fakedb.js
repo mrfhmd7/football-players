@@ -1,26 +1,27 @@
 const addToLocalStorage = id => {
-     let playerCart = getPlayerCart();
-     const quantity = playerCart[id];
-     if (quantity) {
-          const newQuantity = quantity + 1;
-          playerCart[id] = newQuantity;
-     }
-     else {
-          playerCart[id] = 1;
-     }
-}
-
-const getPlayerCart = () => {
-     let playerCart = {};
+     // console.log(id);
+     let playerCart ;
 
      const storedCart = localStorage.getItem('player-cart');
      if (storedCart) {
           playerCart = JSON.parse(storedCart);
      }
-     return playerCart;
+     else {
+          playerCart = {};
+     }
+
+     const quantity = playerCart[id];
+     if (quantity) {
+          const newQuantity = quantity + 1;
+          playerCart[id] = newQuantity;
+          // alert('Already added to player');
+     } else {
+          playerCart[id] = 1;
+     }
+
+     localStorage.setItem('player-cart', JSON.stringify(playerCart));
 }
 
 export {
      addToLocalStorage,
-     getPlayerCart
 }
