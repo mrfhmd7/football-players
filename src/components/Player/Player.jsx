@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Player = ({player, handleAddToCart}) => {
-     const { image, position,age, name, price,id } = player;
+     const { image, position,age, name, price} = player;
      // console.log(player);
 
      const handlePlayer = handleAddToCart;
