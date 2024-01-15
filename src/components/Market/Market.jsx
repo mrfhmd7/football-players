@@ -7,6 +7,7 @@ const Market = () => {
      const [players, setPlayers] = useState([]);
 
      const [cart, setCart] = useState([]);
+     // console.log(cart);
    
      const handleAddToCart = (player) => {
           // console.log(player);
@@ -14,6 +15,7 @@ const Market = () => {
           let playerCart = [];
           
           const exists = cart.find(p => p.id === player.id);
+          // console.log(exists);
           if (!exists) {
                playerCart = [...cart, player];
                // console.log('getPlayerCart');
@@ -22,8 +24,8 @@ const Market = () => {
                const remaining = cart.filter(p => p.id === player.id);
                playerCart = [...remaining, exists];
           }
-       setCart(playerCart);
-       addToLocalStorage(player.id);
+          setCart(playerCart);
+          addToLocalStorage(player.id);
      }
 
      useEffect(() => { 
@@ -34,32 +36,39 @@ const Market = () => {
    
      useEffect(() => {
        const storedCart = getPlayerCart();
-       console.log(storedCart);
+     //   console.log(storedCart);
    
        const savedCart = [];
    
           for (const id in storedCart) {
-               const addedPlayer = players.find(p => p.id === id);
-               if (addedPlayer) {
-                    savedCart.push(addedPlayer)
-               }
+               // console.log(id);
+               // console.log(players);
+               const addedPlayer = players.find((player) => player.id === id);
+               // console.log(addedPlayer);
+               // if (addedPlayer) {
+               //      savedCart.push(addedPlayer)
+               // }
                setCart(savedCart);
           }
      }, [players]);
 
      return (
           <>
-               <div className='grid grid-cols-3 gap-3'>
-                    {
-                         players.map(player => <Player
-                              player={player}
-                               handleAddToCart={handleAddToCart}
-                              key={player.id}
-                         ></Player>)
-                    }
-               </div>
-               <div className='col-span-3'>
-                    <Cart></Cart>
+               <div className='grid grid-cols-10'>
+                    <div className='col-span-7'>
+                         <div className='grid grid-cols-3 gap-3'>
+                              {
+                                   players.map(player => <Player
+                                        player={player}
+                                        handleAddToCart={handleAddToCart}
+                                        key={player.id}
+                                   ></Player>)
+                              }
+                         </div>
+                    </div>
+                    <div className='col-span-3'>
+                         <Cart></Cart>
+                    </div>
                </div>
           </>
      );
