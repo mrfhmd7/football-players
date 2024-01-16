@@ -2,15 +2,19 @@ import React from 'react';
 
 const Cart = ({ cart }) => {
      
-     console.log(cart);
+     // console.log(cart);
 
-     let price = 0;
+     let totalPrice = 0;
+
+     for (const player of cart) {
+          totalPrice = totalPrice + player.price;
+     }
      
      return (
           <div className='bg-orange-300 rounded-md mt-8  ml-10 h-96 relative'>
                <h3 className='text-xl mb-5 font-medium'>Transfer Summary</h3>
                <p className='text-xl mb-4'>Selected Players: {cart.length}</p>
-               <h4 className='font-semibold text-lg'>Total cost: </h4>
+               <h4 className='font-semibold text-lg'>Total cost: ${totalPrice}M</h4>
                <div className='absolute bottom-0 w-full bg-red-500  rounded-md'>
                     <button className='h-10 w-1/2 text-white font-semibold flex justify-between m-auto items-center'>
                          <span>
