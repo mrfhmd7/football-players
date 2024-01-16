@@ -41,13 +41,14 @@ const Market = () => {
        const savedCart = [];
    
           for (const id in storedCart) {
-               // console.log(id);
+               // console.log(typeof id);
                // console.log(players);
-               const addedPlayer = players.find((player) => player.id === id);
-               // console.log(addedPlayer);
-               // if (addedPlayer) {
-               //      savedCart.push(addedPlayer)
-               // }
+          
+               const addedPlayer = players.find((player) => player.id == id);
+               // console.log("added players : ",addedPlayer);
+               if (addedPlayer) {
+                    savedCart.push(addedPlayer)
+               }
                setCart(savedCart);
           }
      }, [players]);
@@ -67,7 +68,9 @@ const Market = () => {
                          </div>
                     </div>
                     <div className='col-span-3'>
-                         <Cart></Cart>
+                         <Cart
+                              cart={cart}
+                         ></Cart>
                     </div>
                </div>
           </>
