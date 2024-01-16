@@ -22,7 +22,12 @@ const getPlayerCart = () => {
      return playerCart;
 }
 
+const deletePlayerCart = () => {
+     localStorage.removeItem('player-cart');
+}
+
 export {
      addToLocalStorage,
-     getPlayerCart
+     getPlayerCart,
+     deletePlayerCart
 }

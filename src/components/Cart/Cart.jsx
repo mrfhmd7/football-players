@@ -1,8 +1,11 @@
 import React from 'react';
+import { deletePlayerCart } from '../../utilities/fakedb';
 
 const Cart = ({ cart }) => {
      
      // console.log(cart);
+
+     const handleDeleteCart = deletePlayerCart;
 
      let totalPrice = 0;
 
@@ -16,7 +19,7 @@ const Cart = ({ cart }) => {
                <p className='text-xl mb-4'>Selected Players: {cart.length}</p>
                <h4 className='font-semibold text-lg'>Total cost: ${totalPrice}M</h4>
                <div className='absolute bottom-0 w-full bg-red-500  rounded-md'>
-                    <button className='h-10 w-1/2 text-white font-semibold flex justify-between m-auto items-center'>
+                    <button onClick={() => handleDeleteCart()} className='h-10 w-1/2 text-white font-semibold flex justify-between m-auto items-center'>
                          <span>
                          Remove all player
                          </span>
